@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- action은 처리할 서버의 url을 입력 -->
+    <form action = "register" method = "get" enctype = "multipart/form-data">
+        <!-- name은 서버에서 사용하기 위한 이름이고
+        id는 클라이언트에서 사용하기 위한 이름 -->
+        <label>이름 : <input type = "text" name = "name" id = "id" /></label>
+        <br/>
+        <input type = "radio" name = "gender" checked = "checked"/>남자
+        <input type = "radio" name = "gender"/>여자
+        <br/>
+        <button>Send</button>
+    </form>
+    
+    <div>div 라인</div>
+    <span>span 라인</span>
+    <span>span 라인</span>
+    <br />
+    <iframe src = "test.html"></iframe>
+
+</body>
+</html>

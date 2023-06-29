@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+
+    <!-- 외부의 스타일시트 파일을 가져와서 적용-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- 문서 내에서 style 태그를 사용하여 지정 -->
+    <style>
+        div {
+            color : cyan;
+        }
+        /* 클래스에 대해 스타일을 지정하려면 앞에 .이 필요하고 아이디는 #이 필요 */
+        .class {
+            color : blue;
+        }
+        #id {
+            color :blueviolet;
+        }
+        #id:hover{
+            color : #ff00ff;
+            font-weight: bold;
+        }
+        /* input에 포커스가 올라오면 배경 색을 지정 */
+        input:focus{
+            background-color :cornsilk;
+        }
+        input:checked{
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>P에 css 적용하기</p>
+    <div class = "class">div에 적용하기</div>
+    <!-- inline 방식으로 css 적용 -->
+    <span style="color: bisque">span에 적용하기</span>
+    <span class = "class">span의 class에 적용하기</span>
+    <p id = "id">P 태그에 id를 사용해서 다른 스타일 적용하기</p>
+    <br />
+
+    <input type = "text"/>
+    <input type = "checkbox"/>
+
+</body>
+
+</html>
